@@ -18,7 +18,7 @@ from django.urls import path
 from ansible_tmaskpl_app.admin import ansible_site
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', ansible_site.urls),
     
 ]
