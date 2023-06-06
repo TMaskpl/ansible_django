@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.validators import RegexValidator
 
-numeric = RegexValidator(r'^[0-9]+', 'Only digit characters.')
+numeric = RegexValidator(r'^[0-9]+', 'Pole można wypełnić tylko cyframi.')
 
 # Create your models here.
 class customer_tmaskpl(models.Model):
