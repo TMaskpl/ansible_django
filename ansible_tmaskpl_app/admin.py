@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . import models
+from .models import customer_tmaskpl 
 
 # Register your models here.
 class AnsibleAdminArea(admin.AdminSite):
@@ -7,4 +7,9 @@ class AnsibleAdminArea(admin.AdminSite):
     
 ansible_site = AnsibleAdminArea(name='AnsibleAdmin')
 
-ansible_site.register(models.customer_tmaskpl)
+ansible_site.register(customer_tmaskpl)
+
+# @admin.register(customer_tmaskpl)
+# class AnsibleAdmin(admin.ModelAdmin):
+#     # list_display = ["customer_name"]
+#     list_filter = ("customer_miasto",)
